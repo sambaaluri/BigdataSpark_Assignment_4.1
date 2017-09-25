@@ -1,0 +1,229 @@
+1.
+
+public class acad {
+
+    static int a=5;
+    static int b=10;
+    
+    public static void main ( String [] Args)
+    {
+     System.out.println("Sum of the Data : " + (a + b) );
+    }
+}
+
+2.
+
+import java.util.Scanner;
+
+public class acad4_2 {
+    
+    public static void main ( String [] Args)
+    {
+      int a, b;
+        
+     @SuppressWarnings("resource")
+    Scanner reader = new Scanner(System.in);
+     System.out.println("Enter the value of a : ");
+     a=reader.nextInt();
+     
+     @SuppressWarnings("resource")
+     Scanner reader1 = new Scanner(System.in);
+     System.out.println("Enter the value of b : ");
+     b=reader1.nextInt();
+    
+     System.out.println("Sum of the Data : " + (a + b) );
+    
+    }
+
+}
+
+4.
+
+
+import java.util.Scanner;
+
+public class Acad_4_4 {
+    
+    public static void main ( String [] Args)
+    {
+      int a, b;
+        
+     @SuppressWarnings("resource")
+    Scanner reader = new Scanner(System.in);
+     System.out.println("Enter the value of a : ");
+     a=reader.nextInt();
+     
+     @SuppressWarnings("resource")
+     Scanner reader1 = new Scanner(System.in);
+     System.out.println("Enter the value of b : ");
+     b=reader1.nextInt();
+     
+     int i;
+     
+     for (i=a; i<=b; i++)
+     {
+         if ( i % 2 == 0 );
+         System.out.println("Even numbers are : " + (i) );
+         
+     }
+     
+     for (i=a; i<=b; i++)
+     {
+         if ( i % 2 == 1 );
+         System.out.println("Base numbers are : " + (i) );
+         
+     }
+     
+     
+    
+    }
+
+}
+
+5.
+
+import java.util.Scanner;
+
+public class Acad_2_5 {
+    
+    public static void main ( String [] Args)
+    {
+      int a;
+        
+     @SuppressWarnings("resource")
+    Scanner reader = new Scanner(System.in);
+     System.out.println("Enter the value of a : ");
+     a=reader.nextInt();
+     
+         
+     System.out.println("Multification for : " + (a) );
+     
+     int i;
+     
+     for (i=1; i<=10; i++)
+     {
+         
+         
+          System.out.println( (a) + " X " + (i) + " = " + ( a * i ));
+         
+     }
+     
+  
+    }
+
+}
+6.
+
+import java.util.Scanner;
+
+public class Acad_2_6 {
+    
+    public void sum(int a, int b)
+    {
+     System.out.println("Sum of two arguments are " + (a + b));        
+    }
+    
+    public void sum(int a, int b, int c)
+    {
+    
+    System.out.println("Sum of three arguments are " + (a + b + c));
+        
+    }
+    
+    
+    public static void main ( String [] Args)
+    {
+     int a;
+        
+     Acad_2_6 oversum = new Acad_2_6();
+     
+     oversum.sum(2, 3);
+     oversum.sum(2, 3,4);
+       
+    }
+
+}
+
+7.
+
+import java.util.Scanner;
+
+public class Acad_2_7 {
+    
+    public void sum(int a, int b)
+    {
+     System.out.println("Sum of two arguments are " + (a + b));        
+    }
+    
+    public void sum(int a, int b, int c)
+    {
+    
+    System.out.println("Sum of three arguments are " + (a + b + c));
+        
+    }
+    
+    
+    public static void main ( String [] Args)
+    {
+     int a;
+        
+     Acad_2_7 oversum = new Acad_2_7();
+     
+     oversum.sum(2, 3);
+     oversum.sum(2, 3, 4);
+       
+    }
+
+}
+
+8.
+
+
+
+public class Acad_2_8 {
+    
+    public void sort(int a[])
+    {
+     int size = a.length;
+     int i=0, j, k ;
+     k = a[i];
+    
+     for (i=0; i< (size); i ++)
+     {
+     for (j= 1 ; j < (size); j ++ )
+     {     
+       if ( a[j] < a[i])
+       {
+           k = a[i];
+           a[i] = a[j];
+           a[j] = k;
+        }
+     }
+      }
+     
+     for (int l =0; l < size; l++)
+     {
+    
+         System.out.println(a[l]);
+     }     
+    
+     
+     
+     
+    }
+    
+    public static void main ( String [] Args)
+    {
+     int a[]= {23,21,1,5,11,3,4};
+     int size=a.length;
+     
+     Acad_2_8 SortObj = new Acad_2_8();
+     SortObj.sort(a);
+     System.out.println("Sorted Array is for teh size  " + size );
+     
+      
+     
+           
+    }
+
+}
